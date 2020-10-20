@@ -102,10 +102,11 @@ public class DropTokenResource {
             .type(MOVE)
             .column(request.getColumn())
             .build();
-        
+
+        PostMoveResponse response;
         try{
             int moveId = cur.addMove(move);
-            PostMoveResponse response = new PostMoveResponse.Builder()
+             response = new PostMoveResponse.Builder()
             .moveLink(String.format("%s/moves/%s", gameId, moveId))
             .build();
         } catch (StatusException e) {

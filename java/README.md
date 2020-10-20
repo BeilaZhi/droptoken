@@ -1,4 +1,4 @@
-## 98Point6 Drop Token Java shim ##
+##Drop Token Java shim ##
 This is provided as a possible starting point for a Java implementation. This code, based on [Dropwizard](http://www.dropwizard.io/1.1.0/docs/), requires maven and Java 1.8.
 
 Feel free to change **everything**.
